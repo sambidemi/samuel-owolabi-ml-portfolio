@@ -57,7 +57,7 @@ const projects = [
     type: 'Association Rule Learning · In Progress',
     description: 'An exploration of transaction data to discover frequently purchased item combinations and association rules. Add final findings and repository link when the project is complete.',
     tags: ['Python', 'Pandas', 'MLxtend', 'Apriori', 'Association Rules'],
-    link: GITHUB,
+    link: 'https://github.com/sambidemi/'
     note: 'Add project repository when published'
   }
 ]
@@ -71,11 +71,11 @@ const skills = [
 ]
 
 const certificates = [
-  ['Supervised Machine Learning', 'Coursera / DeepLearning.AI', 'ADD COMPLETION DATE', 'ADD CERTIFICATE URL'],
-  ['Advanced Learning Algorithms', 'Coursera / DeepLearning.AI', 'ADD COMPLETION DATE', 'ADD CERTIFICATE URL'],
-  ['Unsupervised Learning Algorithms', 'Coursera / DeepLearning.AI', 'ADD COMPLETION DATE', 'ADD CERTIFICATE URL'],
-  ['Neural Networks and Deep Learning', 'Coursera / DeepLearning.AI', 'ADD COMPLETION DATE', 'ADD CERTIFICATE URL'],
-  ['Data Science Certificate', 'CodeSquad LLC', 'ADD COMPLETION DATE', 'ADD CERTIFICATE URL (IF AVAILABLE)']
+  ['Supervised Machine Learning', 'DeepLearning.AI', 'November 2025', 'https://www.coursera.org/account/accomplishments/certificate/OBOVQ5XTG44H'],
+  ['Advanced Learning Algorithms', 'DeepLearning.AI', 'August 2026', 'https://www.coursera.org/account/accomplishments/verify/S5D0HHHB2AZD'],
+  ['Unsupervised Learning Algorithms', 'DeepLearning.AI', 'September 2026', 'https://www.coursera.org/account/accomplishments/records/R5P8IO2MPSCS'],
+  ['Neural Networks and Deep Learning', 'DeepLearning.AI', 'October 2026', 'https://www.coursera.org/account/accomplishments/verify/APMA8HVR534H'],
+  ['Data Science Certificate', 'CodeSquad LLC', 'September 2025', 'ADD CERTIFICATE URL (IF AVAILABLE)']
 ]
 
 function SectionHeading({ eyebrow, title, text }) {
@@ -190,8 +190,8 @@ function App() {
             <h2>Let's build something<br/><span>useful with data.</span></h2>
             <p>I am interested in machine learning opportunities, collaborations, and projects with meaningful real-world applications.</p>
             <div className="contact-actions">
-              <a className="button button-light" href="mailto:YOUR_EMAIL@example.com"><Mail size={17}/> Email me</a>
-              <a className="button button-outline-light" href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank" rel="noreferrer"><Linkedin size={17}/> LinkedIn</a>
+              <a className="button button-light" href="mailto:owolabisamuel085@gmail.com"><Mail size={17}/> Email me</a>
+              <a className="button button-outline-light" href="https://www.linkedin.com/in/owolabi-samuel-85a82a381" target="_blank" rel="noreferrer"><Linkedin size={17}/> LinkedIn</a>
               <a className="button button-outline-light" href={GITHUB} target="_blank" rel="noreferrer"><Github size={17}/> GitHub</a>
             </div>
             <p className="placeholder-warning">Before publishing: replace the email and LinkedIn placeholders with your real contact details.</p>
