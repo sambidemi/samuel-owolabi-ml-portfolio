@@ -50,15 +50,6 @@ const projects = [
     description: 'An analysis of customer shopping data using clustering to explore customer groups and differences in purchasing behaviour.',
     tags: ['Python', 'Pandas', 'Scikit-learn', 'Clustering', 'EDA'],
     link: 'https://github.com/sambidemi/Customer-Shopping-Segmentation'
-  },
-  {
-    number: '06',
-    name: 'Online Retail Market Basket Analysis',
-    type: 'Association Rule Learning · In Progress',
-    description: 'An exploration of transaction data to discover frequently purchased item combinations and association rules. Add final findings and repository link when the project is complete.',
-    tags: ['Python', 'Pandas', 'MLxtend', 'Apriori', 'Association Rules'],
-    link: 'https://github.com/sambidemi/'
-    note: 'Add project repository when published'
   }
 ]
 
@@ -74,8 +65,7 @@ const certificates = [
   ['Supervised Machine Learning', 'DeepLearning.AI', 'November 2025', 'https://www.coursera.org/account/accomplishments/certificate/OBOVQ5XTG44H'],
   ['Advanced Learning Algorithms', 'DeepLearning.AI', 'August 2026', 'https://www.coursera.org/account/accomplishments/verify/S5D0HHHB2AZD'],
   ['Unsupervised Learning Algorithms', 'DeepLearning.AI', 'September 2026', 'https://www.coursera.org/account/accomplishments/records/R5P8IO2MPSCS'],
-  ['Neural Networks and Deep Learning', 'DeepLearning.AI', 'October 2026', 'https://www.coursera.org/account/accomplishments/verify/APMA8HVR534H'],
-  ['Data Science Certificate', 'CodeSquad LLC', 'September 2025', 'ADD CERTIFICATE URL (IF AVAILABLE)']
+  ['Neural Networks and Deep Learning', 'DeepLearning.AI', 'October 2026', 'https://www.coursera.org/account/accomplishments/verify/APMA8HVR534H']
 ]
 
 function SectionHeading({ eyebrow, title, text }) {
@@ -150,7 +140,6 @@ function App() {
               <div className="project-top"><span className="project-number">{project.number}</span><a href={project.link} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} repository`}><ArrowUpRight size={19}/></a></div>
               <span className="project-type">{project.type}</span><h3>{project.name}</h3><p>{project.description}</p>
               <div className="tag-list project-tags">{project.tags.map(tag => <span className="tag" key={tag}>{tag}</span>)}</div>
-              {project.note && <small className="project-note">{project.note}</small>}
               <a className="text-link" href={project.link} target="_blank" rel="noreferrer">View project <ExternalLink size={14}/></a>
             </article>)}
           </div>
@@ -166,7 +155,6 @@ function App() {
                 <div className="timeline-header"><div><h3>Data Scientist Intern</h3><p className="company">CodeSquad LLC</p></div><span className="date-pill">APR 2025 — SEP 2025</span></div>
                 <p>Worked on data science tasks across the machine learning workflow, including data collection, cleaning, exploratory analysis, visualization, predictive modelling, and communicating findings.</p>
                 <ul><li>Prepared datasets and performed exploratory analysis to identify patterns and relationships.</li><li>Developed and evaluated classification and regression models using Python and Scikit-learn.</li><li>Contributed to predictive analytics projects involving real estate, healthcare, and other problem domains.</li><li>Worked with team members to translate project requirements into practical data science solutions.</li></ul>
-                <span className="experience-note">Confirm the location and adjust responsibilities to match your actual internship record before publishing.</span>
               </div>
             </div>
           </div>
@@ -176,9 +164,9 @@ function App() {
           <SectionHeading eyebrow="05 / EDUCATION" title="Education & certifications"/>
           <div className="education-card">
             <div className="education-icon"><GraduationCap size={25}/></div>
-            <div className="education-main"><h3>Bachelor of Science — Information and Communication Science</h3><p>University of Ilorin · Ilorin, Kwara State, Nigeria</p><div className="education-bottom"><span>First Class Honours</span><span>Graduation: 2026 <small>(confirm exact date)</small></span></div></div>
+            <div className="education-main"><h3>Bachelor of Science — Information and Communication Science</h3><p>University of Ilorin · Ilorin, Kwara State, Nigeria</p><div className="education-bottom"><span>First Class Honours</span><span>Graduation: 2026</span></div></div>
           </div>
-          <div className="cert-heading"><h3><Award size={19}/> Certifications</h3><span className="small-muted">Add completion dates and credential links</span></div>
+          <div className="cert-heading"><h3><Award size={19}/> Certifications</h3></div>
           <div className="cert-list">
             {certificates.map(([name, provider, date, url]) => <div className="cert-row" key={name}><div><strong>{name}</strong><p>{provider}</p></div><div className="cert-meta"><span>{date}</span><span>{url}</span></div></div>)}
           </div>
@@ -194,7 +182,6 @@ function App() {
               <a className="button button-outline-light" href="https://www.linkedin.com/in/owolabi-samuel-85a82a381" target="_blank" rel="noreferrer"><Linkedin size={17}/> LinkedIn</a>
               <a className="button button-outline-light" href={GITHUB} target="_blank" rel="noreferrer"><Github size={17}/> GitHub</a>
             </div>
-            <p className="placeholder-warning">Before publishing: replace the email and LinkedIn placeholders with your real contact details.</p>
           </div>
         </section>
       </main>
